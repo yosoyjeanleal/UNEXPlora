@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Basic Page Info -->
+    <meta charset="utf-8" />
+    <title>UNEXPlora</title>
+
+    <!-- Site favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="vendors/images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="vendors/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="vendors/images/favicon-16x16.png" />
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="vendors/styles/core.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/styles/icon-font.min.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/styles/style.css" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GBZ3SGGX85"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2973766580778258" crossorigin="anonymous"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-GBZ3SGGX85");
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                "gtm.start": new Date().getTime(),
+                event: "gtm.js"
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != "dataLayer" ? "&l=" + l : "";
+            j.async = true;
+            j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, "script", "dataLayer", "GTM-NXZMQSS");
+    </script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+    
+    <div class="header">
+        <div class="header-left">
+            <div class="menu-icon bi bi-list"></div>
+            <div class="search-toggle-icon bi bi-search" data-toggle="header_search"></div>
+
+
+        </div>
+        <div class="header-right">
+            <div class="dashboard-setting user-notification">
+                <div class="dropdown">
+                    <a class="dropdown-toggle no-arrow" href="javascript:;" data-toggle="right-sidebar">
+                        <i class="dw dw-settings2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="dashboard-setting user-notification">
+                <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                    <i class="icon-copy bi bi-info-circle"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
+                    <a class="dropdown-item" href="info.html">
+                        <i class="dw dw-help"></i> Desarrolladores</a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <div class="right-sidebar">
+        <div class="sidebar-title">
+            <h3 class="weight-600 font-16 text-blue">
+                Opciones de Diseño
+                <span class="btn-block font-weight-400 font-12">Configuración de la Interfaz de Usuario
+                            </span
+					>
+				</h3>
+				<div class="close-sidebar" data-toggle="right-sidebar-close">
+					<i class="icon-copy ion-close-round"></i>
+				</div>
+			</div>
+			<div class="right-sidebar-body customscroll">
+				<div class="right-sidebar-body-content">
+					<h4 class="weight-600 font-18 pb-10">Fondo de Cabecera</h4>
+					<div class="sidebar-btn-group pb-30 mb-10">
+						<a
+							href="javascript:void(0);"
+							class="btn btn-outline-primary header-white active"
+							>Claro</a
+						>
+						<a
+							href="javascript:void(0);"
+							class="btn btn-outline-primary header-dark"
+							>Oscuro</a
+						>
+					</div>
+
+					<h4 class="weight-600 font-18 pb-10">Fondo de la Barra Lateral</h4>
+					<div class="sidebar-btn-group pb-30 mb-10">
+						<a
+							href="javascript:void(0);"
+							class="btn btn-outline-primary sidebar-light"
+							>Claro</a
+						>
+						<a
+							href="javascript:void(0);"
+							class="btn btn-outline-primary sidebar-dark active"
+							>Oscuro</a
+						>
+					</div>					
+                            <div class="reset-options pt-30 text-center">
+                                <button class="btn btn-danger" id="reset-settings">
+							Restaurar configuraciones
+						</button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="left-side-bar">
+                <div class="brand-logo">
+                    <a href="index.html">
+                        <img src="vendors/images/deskapp-logo.svg" alt="" class="dark-logo" />
+                        <img src="vendors/images/deskapp-logo-white.svg" alt="" class="light-logo" />
+                    </a>
+                    <div class="close-sidebar" data-toggle="left-sidebar-close">
+                        <i class="ion-close-round"></i>
+                    </div>
+                </div>
+                <div class="menu-block customscroll">
+                    <div class="sidebar-menu">
+                        <ul id="accordion-menu">
+                            <li class="dropdown">
+                                <a href="javascript:;" class="dropdown-toggle">
+                                    <span class="micon bi bi-house"></span
+								><span class="mtext">Inicio</span>
+                                </a>
+                                <ul class="submenu">
+                                    <li><a href="index.html">Información</a></li>
+                                    <li><a href="index2.html">Profesores</a></li>                                    
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="javascript:;" class="dropdown-toggle">
+                                    <span class="micon bi bi-command"></span
+                                            ><span class="mtext">Vida Universitaria</span>
+                                </a>
+                                <ul class="submenu">
+                                    <li><a href="grupos.html">Grupos & Clubes</a></li>
+                                    <li><a href="Marketplace.html">Marketplace</a></li>                                    
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="javascript:;" class="dropdown-toggle">
+                                    <span class="micon bi bi-textarea-resize"></span
+                                            ><span class="mtext">Galeria</span>
+                                </a>
+                                <ul class="submenu">
+                                    <li><a href="gallery.html"> Universidad</a></li>
+                                    <li><a href="gallery2.html">Eventos</a></li>
+                                </ul>
+                            </li>                                
+                            <li>
+                    <a href="info.html" class="dropdown-toggle no-arrow">
+                        <span class="micon bi bi-receipt-cutoff"></span
+								><span class="mtext">Desarrolladores</span>
+                    </a>
+                </li>                                              
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-menu-overlay"></div>
+
+			<div class="main-container">
+                <div class="pd-ltr-20 xs-pd-20-10">
+                    <div class="min-height-200px">
+                        <div class="page-header">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12">
+                                    <div class="title">
+                                        <h4>Cards Hover</h4>
+                                    </div>
+                                    <nav aria-label="breadcrumb" role="navigation">
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item">
+                                                <a href="index.html">Vida Universitaria</a>
+                                            </li>
+                                            <li class="breadcrumb-item active" aria-current="page">
+                                                Grupos & Clubes
+                                            </li>
+                                        </ol>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Fade-in effect -->
+                        <h5 class="h4 text-blue mb-10">Grupos Estudiantiles</h5>
+                        <p class="mb-30">Movimientos de Nuestra Universidad</p>
+                        <div class="row clearfix">
+                            <div class="col-lg-3 col-md-6 col-sm-12 mb-30">
+                                <div class="da-card">
+                                    <div class="da-card-photo">
+                                        <img src="vendors/images/logo-pi.jpeg" alt="Movimiento de los Machos" />
+                                        <div class="da-overlay">
+                                            <div class="da-social">
+                                                <ul class="clearfix">
+                                                    
+                                                    <li>
+                                                        <a href="https://www.instagram.com/piunexpo?igsh=MWxuZzl0YTQ5N2NpZg=="><i class="fa fa-instagram"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://chat.whatsapp.com/DLmnOEb2VRGJg5UGh4xzMH"><i class="fa fa-whatsapp"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="da-card-content">
+                                        <h5 class="h5 mb-10">π UNEXPO </h5>
+                                        <p class="mb-0">Trabajemos Juntos</p>
+                                    </div>
+                                </div>
+                            </div>
+							<div class="col-lg-3 col-md-6 col-sm-12 mb-30">
+                                <div class="da-card">
+                                    <div class="da-card-photo">
+                                        <img src="vendors/images/logo-unexpo-todos.jpeg" alt="" />
+                                        <div class="da-overlay">
+                                            <div class="da-social">
+                                                <ul class="clearfix">                                                    
+                                                    <li>
+                                                        <a href="https://www.instagram.com/unexposomostodos?igsh=bDhxYjM4aTA3NmZu"><i class="fa fa-instagram"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://chat.whatsapp.com/IgPeYohTt4GDd8FMjMiSJX"><i class="fa fa-whatsapp"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="da-card-content">
+                                        <h5 class="h5 mb-10">Unexpo somos todos</h5> 
+                                        <p class="mb-0">Trabajemos Juntos</p>                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 mb-30">
+                                <div class="da-card">
+                                    <div class="da-card-photo">
+                                        <img src="vendors/images/logo-unexpo-activa.jpeg" alt="" />
+                                        <div class="da-overlay">
+                                            <div class="da-social">
+                                                <ul class="clearfix">
+                                                    <li>
+                                                        <a href="https://www.facebook.com/unexpoactiva?mibextid=ZbWKwL"><i class="fa fa-facebook"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://t.me/informate_unexpoactiva"><i class="fa fa-telegram"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://chat.whatsapp.com/DTGvgK6OAW68YDeGkUCXkE"><i class="fa fa-whatsapp"></i></a>
+                                                    </li>
+													<li>
+                                                        <a href="https://www.instagram.com/unexpoactiva?igsh=MTJ0aWFjdnpoa3d3"><i class="fa fa-instagram"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="da-card-content">
+                                        <h5 class="h5 mb-10">UNEXPO Activa</h5>
+                                        <p class="mb-0">Por una mejor Universidad</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 mb-30">
+                                <div class="da-card">
+                                    <div class="da-card-photo">
+                                        <img src="vendors/images/logo-propeludos.jpeg" alt="" />
+                                        <div class="da-overlay">
+                                            <div class="da-social">
+                                                <ul class="clearfix">
+                                                    <li>
+                                                        <a href="https://www.instagram.com/polipropeludosunexpo?igsh=YWR0OWFhZXNkanZ6"><i class="fa fa-instagram"></i></a>
+                                                    </li>
+                                                    
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="da-card-content">
+                                        <h5 class="h5 mb-10">Propeludos UNEXPO</h5>
+                                        <p class="mb-0">Luchamos x brindarles una vida digna</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 mb-30">
+                                <div class="da-card">
+                                    <div class="da-card-photo">
+                                        <img src="vendors/images/logo-cdpu.jpeg" alt="" />
+                                        <div class="da-overlay">
+                                            <div class="da-social">
+                                                <ul class="clearfix">                                                   
+                                                    <li>
+                                                        <a href="https://chat.whatsapp.com/DLmj19FmRrP26e801Rvvob"><i class="fa fa-whatsapp"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="da-card-content">
+                                        <h5 class="h5 mb-10">CPDU</h5>
+                                        <p class="mb-0">Comité por los Derechos Universitarios</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+						<!-- Fade-in effect -->
+                        <h5 class="h4 text-blue mb-10">Clubes</h5>
+                        <p class="mb-30">Conoce Todos los Clubes de Nuestra Universidad </p>
+                        <div class="row clearfix">                            
+							<div class="col-lg-3 col-md-6 col-sm-12 mb-30">
+                                <div class="da-card">
+                                    <div class="da-card-photo">
+                                        <img src="vendors/images/club-debate.jpeg" alt="" />                                        
+                                    </div>
+                                    <div class="da-card-content">
+                                        <h5 class="h5 mb-10">Club De Debate</h5>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+							<div class="col-lg-3 col-md-6 col-sm-12 mb-30">
+                                <div class="da-card">
+                                    <div class="da-card-photo">
+                                        <img src="vendors/images/club-leactura.jpeg" alt="" />                                        
+                                    </div>
+                                    <div class="da-card-content">
+                                        <h5 class="h5 mb-10">Club De Baile</h5>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+							
+                            <div class="col-lg-3 col-md-6 col-sm-12 mb-30">
+                                <div class="da-card">
+                                    <div class="da-card-photo">
+                                        <img src="vendors/images/club-musica.jpeg" alt="" />                                        
+                                    </div>
+                                    <div class="da-card-content">
+                                        <h5 class="h5 mb-10">Club De Musica</h5>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 mb-30">
+                                <div class="da-card">
+                                    <div class="da-card-photo">
+                                        <img src="vendors/images/club-baseball.jpeg" alt="" />                                        
+                                    </div>
+                                    <div class="da-card-content">
+                                        <h5 class="h5 mb-10">Club De Beisbol</h5>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 mb-30">
+                                <div class="da-card">
+                                    <div class="da-card-photo">
+                                        <img src="vendors/images/club-basketball.jpeg" alt="" />                                        
+                                    </div>
+                                    <div class="da-card-content">
+                                        <h5 class="h5 mb-10">Club De Basketbol</h5>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-30">
+                            <div class="da-card">
+                                <div class="da-card-photo">
+                                    <img src="vendors/images/club-excursion.jpeg" alt="" />                                        
+                                </div>
+                                <div class="da-card-content">
+                                    <h5 class="h5 mb-10">Club De Excursión</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>    
+                                    
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-30">
+                    <div class="da-card">
+                        <div class="da-card-photo">
+                            <img src="vendors/images/club-voleibol.jpeg" alt="" />                                        
+                        </div>
+                        <div class="da-card-content">
+                            <h5 class="h5 mb-10">Club De Voleibol</h5>
+                            
+                        </div>
+                    </div>
+                </div>
+            
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-30">
+                <div class="da-card">
+                    <div class="da-card-photo">
+                        <img src="vendors/images/club-futbol.jpeg" alt="" />                                        
+                    </div>
+                    <div class="da-card-content">
+                        <h5 class="h5 mb-10">Club De Futbol</h5>                        
+                    </div>
+                </div> 
+            </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-30">
+                    <div class="da-card">
+                        <div class="da-card-photo">
+                            <img src="vendors/images/club-ajedrez.jpeg" alt="" />                                        
+                        </div>
+                        <div class="da-card-content">
+                            <h5 class="h5 mb-10">Club De Ajedrez</h5>                            
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-30">
+                    <div class="da-card">
+                        <div class="da-card-photo">
+                            <img src="vendors/images/club-lectura.jpeg" alt="" />                                        
+                        </div>
+                        <div class="da-card-content">
+                            <h5 class="h5 mb-10">Club De Lectura</h5>
+                            
+                        </div>
+                    </div>
+                </div>       
+           
+        </div>
+      
+   
+
+                        
+                        
+                            
+                            
+                        
+                    </div>
+                    <div class="footer-wrap pd-20 mb-20 card-box">
+                        UNEXPlora ©2024 By
+                        <a href="https://www.instagram.com/jaypurple13/" target="_blank">Jaymar Dominguez </a
+					>
+				</div>
+			</div>
+		</div>			
+		
+                        <!-- js -->
+                        <script src="vendors/scripts/core.js"></script>
+                        <script src="vendors/scripts/script.min.js"></script>
+                        <script src="vendors/scripts/process.js"></script>
+                        <script src="vendors/scripts/layout-settings.js"></script>
+                        <!-- Google Tag Manager (noscript) -->
+                        <noscript><iframe
+				src="https://www.googletagmanager.com/ns.html?id=GTM-NXZMQSS"
+				height="0"
+				width="0"
+				style="display: none; visibility: hidden"
+			></iframe
+		></noscript>
+                        <!-- End Google Tag Manager (noscript) -->
+</body>
+
+</html>

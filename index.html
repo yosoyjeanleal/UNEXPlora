@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Basic Page Info -->
+    <meta charset="utf-8" />
+    <title>UNEXPlora</title>
+
+    <!-- Site favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="vendors/images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="vendors/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="vendors/images/favicon-16x16.png" />
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="vendors/styles/core.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/styles/icon-font.min.css" />
+    <link rel="stylesheet" type="text/css" href="src/plugins/datatables/css/datatables.bootstrap4.min.css" />
+    <link rel="stylesheet" type="text/css" href="src/plugins/datatables/css/responsive.bootstrap4.min.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/styles/style.css" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GBZ3SGGX85"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2973766580778258" crossorigin="anonymous"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-GBZ3SGGX85");
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                "gtm.start": new Date().getTime(),
+                event: "gtm.js"
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != "dataLayer" ? "&l=" + l : "";
+            j.async = true;
+            j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, "script", "dataLayer", "GTM-NXZMQSS");
+    </script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+    <div class="pre-loader">
+        <div class="pre-loader-box">
+            <div class="loader-logo">
+                <img src="vendors/images/deskapp-logo.svg" alt="" />
+            </div>
+            <div class="loader-progress" id="progress_div">
+                <div class="bar" id="bar1"></div>
+            </div>
+            <div class="percent" id="percent1">0%</div>
+            <div class="Loading-text">Cargando...</div>
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="header-left">
+            <div class="menu-icon bi bi-list"></div>
+            <div class="search-toggle-icon bi bi-search" data-toggle="header_search"></div>
+
+
+        </div>
+        <div class="header-right">
+            <div class="dashboard-setting user-notification">
+                <div class="dropdown">
+                    <a class="dropdown-toggle no-arrow" href="javascript:;" data-toggle="right-sidebar">
+                        <i class="dw dw-settings2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="dashboard-setting user-notification">
+                <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                    <i class="icon-copy bi bi-info-circle"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
+                    <a class="dropdown-item" href="info.html">
+                        <i class="dw dw-help"></i> Desarrolladores</a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <div class="right-sidebar">
+        <div class="sidebar-title">
+            <h3 class="weight-600 font-16 text-blue">
+                Opciones de Diseño
+                <span class="btn-block font-weight-400 font-12">Configuración de la Interfaz de Usuario
+                            </span
+					>
+				</h3>
+				<div class="close-sidebar" data-toggle="right-sidebar-close">
+					<i class="icon-copy ion-close-round"></i>
+				</div>
+			</div>
+			<div class="right-sidebar-body customscroll">
+				<div class="right-sidebar-body-content">
+					<h4 class="weight-600 font-18 pb-10">Fondo de Cabecera</h4>
+					<div class="sidebar-btn-group pb-30 mb-10">
+						<a
+							href="javascript:void(0);"
+							class="btn btn-outline-primary header-white active"
+							>Claro</a
+						>
+						<a
+							href="javascript:void(0);"
+							class="btn btn-outline-primary header-dark"
+							>Oscuro</a
+						>
+					</div>
+
+					<h4 class="weight-600 font-18 pb-10">Fondo de la Barra Lateral</h4>
+					<div class="sidebar-btn-group pb-30 mb-10">
+						<a
+							href="javascript:void(0);"
+							class="btn btn-outline-primary sidebar-light"
+							>Claro</a
+						>
+						<a
+							href="javascript:void(0);"
+							class="btn btn-outline-primary sidebar-dark active"
+							>Oscuro</a
+						>
+					</div>					
+                            <div class="reset-options pt-30 text-center">
+                                <button class="btn btn-danger" id="reset-settings">
+							Reset Settings
+						</button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="left-side-bar">
+                <div class="brand-logo">
+                    <a href="index.html">
+                        <img src="vendors/images/deskapp-logo.svg" alt="" class="dark-logo" />
+                        <img src="vendors/images/deskapp-logo-white.svg" alt="" class="light-logo" />
+                    </a>
+                    <div class="close-sidebar" data-toggle="left-sidebar-close">
+                        <i class="ion-close-round"></i>
+                    </div>
+                </div>
+                <div class="menu-block customscroll">
+                    <div class="sidebar-menu">
+                        <ul id="accordion-menu">
+                            <li class="dropdown">
+                                <a href="javascript:;" class="dropdown-toggle">
+                                    <span class="micon bi bi-house"></span
+								><span class="mtext">Inicio</span>
+                </a>
+                <ul class="submenu">
+                    <li><a href="index.html">Informacion</a></li>
+                    <li><a href="index2.html">Profesores</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:;" class="dropdown-toggle">
+                        <span class="micon bi bi-command"></span
+                                ><span class="mtext">Vida Universitaria</span>
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="grupos.html">Grupos & Clubes</a></li>
+                        <li><a href="Marketplace.html">Marketplace</a></li>                                    
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:;" class="dropdown-toggle">
+                        <span class="micon bi bi-textarea-resize"></span
+								><span class="mtext">Galeria</span>
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="gallery.html">Universidad</a></li>
+                        <li><a href="gallery2.html">Eventos</a></li>
+                    </ul>
+                </li>                                
+                <li>
+                    <a href=".html" class="dropdown-toggle no-arrow">
+                        <span class="micon bi bi-receipt-cutoff"></span
+								><span class="mtext">Desarrolladores</span>
+                    </a>
+                </li>            
+        </div>
+    </div>
+    </div>
+    <div class="mobile-menu-overlay"></div>
+
+    <div class="main-container">
+        <div class="pd-ltr-20">
+            <div class="card-box pd-20 height-100-p mb-30">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <img src="vendors/images/banner-img.png" alt="" />
+                    </div>
+                    <div class="col-md-8">
+                        <h4 class="font-20 weight-500 mb-10 text-capitalize">
+                            Bienvendo!!!
+                            <div class="weight-600 font-30 text-blue">A UNEXPlora!</div>
+                        </h4>
+                        <p class="font-18 max-width-600">
+                            UNEXPlora es una página web innovadora desarrollada y diseñada para la Universidad Nacional Experimental Politécnica “Antonio José de Sucre” (UNEXPO).
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="pd-20 g-white border-radius-4 box-shadow mb-30">
+                <div class="col-lg-12 col-md-24 col-sm-24 mb-60">
+                    <h5 class="h4 text-blue mb-20">Quienes Somos</h5>
+                    <div class="tab">
+                        <ul class="nav nav-pills" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active text-blue" data-toggle="tab" href="#home5" role="tab" aria-selected="true">Reseña</a
+											>
+										</li>
+										<li class="nav-item">
+											<a
+												class="nav-link text-blue"
+												data-toggle="tab"
+												href="#profile5"
+												role="tab"
+												aria-selected="false"
+												>Misión</a
+											>
+										</li>
+										<li class="nav-item">
+											<a
+												class="nav-link text-blue"
+												data-toggle="tab"
+												href="#contact5"
+												role="tab"
+												aria-selected="false"
+												>Visión</a
+											>
+										</li>                                        
+									</ul>
+									<div class="tab-content">
+										<div
+											class="tab-pane fade show active"
+											id="home5"
+											role="tabpanel">
+											<div class="pd-20">
+												<p>La Universidad Nacional Experimental Politécnica “Antonio José de Sucre” (UNEXPO) fue establecida el 20 de febrero de 1979 por el Ejecutivo Nacional, de conformidad con los artículos 10 de la Ley de Universidades y 3 del decreto No. 3087.</p>
+
+                                                <p>La base histórica de la UNEXPO, que ostenta el lema de “La Universidad Técnica del Estado Venezolano”, está conformada por una vasta experiencia acumulada en largos años de servicios al país, distribuidos en los antiguos institutos politécnicos 
+                                                que le dieron su origen: Instituto Universitario Politécnico de Barquisimeto (1962), el Instituto Universitario Politécnico de Guayana (1971) y el Instituto Universitario Politécnico “Luis Caballero Mejías”, de Caracas (1974), sedes que hoy sirven 
+                                                de asiento a los tres vicerrectorados, agregándose sus núcleos ubicados en Guarenas (1981), Charallave (1983) y Carora (1984).</p>
+
+                                                <p>Esta casa de estudios tiene como norte la formación del recurso humano y el logro de la excelencia académica, hecho que se refleja en sus egresados y en el quehacer humanístico, científico y tecnológico de sus centros de investigación, donde se 
+                                                    han diseñado las estrategias pertinentes y los mecanismos necesarios para solucionar problemas del parque industrial, de la pequeña y mediana empresa y de los sectores siderúrgicos, eléctrico.</p>
+
+                                                <p>Sus carreras de ingeniería, cursos de actualización, postgrados a nivel de maestrías y especialización, asistencia técnica y asesoramiento en proyectos industriales, colocan a nuestra universidad a la vanguardia en el 
+                                                sector de educación superior venezolana.</p>
+											</div>
+										</div>
+										<div class="tab-pane fade" id="profile5" role="tabpanel">
+											<div class="pd-20">                                                
+												La UNEXPO como institución pública de educación superior, fundamentalmente, 
+                                                en el área de la ingeniería y de la tecnología, tiene como Misión contribuir 
+                                                con el desarrollo humano, científico y tecnológico del país, al cumplir las 
+                                                funciones básicas universitarias: Docencia, Investigación y Extensión, con significación 
+                                                social y con un alto nivel de calidad.
+											</div>
+										</div>
+										<div class="tab-pane fade" id="contact5" role="tabpanel">
+											<div class="pd-20">
+												La UNEXPO tiene como Visión, ser una institución de educación superior que conjuga aspiraciones, 
+                                                conocimientos, habilidades, competencias, valores, actividades, procedimientos, procesos y ambientes 
+                                                con los diversos sectores sociales y el Estado, con el propósito de: (a) dar formación permanente e 
+                                                integral, fundamentalmente, en el área de la ingeniería y la tecnología, con un alto nivel de calidad, 
+                                                (b) generar, divulgar y aplicar conocimientos socialmente significativos y (c) dar un uso social a ese 
+                                                conocimiento. Contribuyendo así al desarrollo del país: generando comportamiento ciudadano de democracia
+                                                 y participación, formando profesionales en el área tecnológica, creando ocupaciones de calidad, introduciendo 
+                                                 modificaciones en el proceso productivo, estimulando el desarrollo tecnológico, interviniendo en la corrección 
+                                                 de desequilibrios sociales, asegurando la base de sustentación ecológica y aportando soluciones, políticamente viables 
+                                                 e históricamente relevantes, a las necesidades de transformación de la sociedad para la construcción de un futuro mejor.
+                                                
+											</div>
+										</div>                                        
+									</div>
+								</div>							
+						</div>
+                    </div>
+
+                    <div class="pd-20 g-white border-radius-4 box-shadow mb-30">
+                        <div class="col-lg-12 col-md-24 col-sm-24 mb-60">
+                            <h4 class="mb-15 text-blue h4">Canales Pricipales</h4>
+                            <p>Sigenos en Todas Nuestras Redes</p>
+                            <div class="btn-list">
+                                <button type="button" class="btn" data-bgcolor="#3b5998" data-color="#ffffff">
+                                    <i class="fa fa-facebook"></i><a href="https://www.facebook.com/Unexpove?mibextid=ZbWKwL" style="color: white;"> facebook</a>  
+                                  </button>                                  
+                                <button type="button" class="btn" data-bgcolor="#1da1f2" data-color="#ffffff">
+                                            <i class="fa fa-twitter"></i> <a href="https://x.com/unexpove?lang=es" style="color: white;">x</a>
+                                        </button>
+                                        <button type="button" class="btn" data-bgcolor="#007bb5" data-color="#ffffff">
+                                            <i class="fa fa-telegram"></i> <a href="https://t.me/urace_bqto" style="color: white;">telegram</a>
+                                        </button>
+                                <button type="button" class="btn" data-bgcolor="#29CA09" data-color="#ffffff">
+                                            <i class="fa fa-whatsapp"></i> <a href="https://chat.whatsapp.com/FgZdCuVrVZxH4oaKJyFphm" style="color: white;">whatsapp</a>
+                                        </button>
+                                <button type="button" class="btn" data-bgcolor="#c32361" data-color="#ffffff">
+                                            <i class="fa fa-instagram"></i> <a href="https://www.instagram.com/unexpove?igsh=MTM4aXN5ZzQ5OGFjZw==" style="color: white;">instagram</a>
+                                        </button>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4 class="h4 text-blue mb-30">Carreras</h4>
+                    <h5 class="h4 text-blue mb-30">Carreras Disponibles</h5>
+                    <div class="row clearfix">
+                        <div class="col-md-4 col-sm-12 mb-30">
+                            <div class="card text-white bg-primary card-box">
+                                <div class="card-header">Ingeniería</div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-white">Electrónica</h5>
+                                    <p class="card-text">
+                                        Es una rama de la ingeniería que se enfoca en el diseño, desarrollo y aplicación de sistemas electrónicos. Estos sistemas utilizan componentes 
+                                        electrónicos como circuitos integrados, transistores y diodos para procesar información y energía.</p>
+                                        <p> Descargar Pensum UNEXPO</p>                                 
+                                        <p>1. Control</p>
+                                        <p>2. Computación</p>
+                                        <p>3. Comunicaciones</p>                                       
+                                        
+                                    
+                                    <button type="button" class="btn btn-secondary" onclick="window.location.href = 'https://virtualunexpo.com/wp-content/uploads/Barquisimeto-ingenieria-electronica-Control.pdf'">
+                                        1
+                                    </button>
+                                    <button type="button" class="btn btn-secondary" onclick="window.location.href = 'https://virtualunexpo.com/wp-content/uploads/Barquisimeto-ingenieria-electronica-Computaci%C3%B3n.pdf'">
+                                        2
+                                    </button>
+                                    <button type="button" class="btn btn-secondary" onclick="window.location.href = 'https://virtualunexpo.com/wp-content/uploads/Barquisimeto-ingenieria-electronica-Comunicaciones.pdf'">
+                                        3
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 mb-30">
+                            <div class="card text-white bg-secondary card-box">
+                                <div class="card-header">Ingeniería</div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-white">Eléctrica</h5>
+                                    <p class="card-text">
+                                        Es una rama de la ingeniería que se encarga del estudio, diseño y desarrollo de sistemas eléctricos. Los ingenieros eléctricos trabajan con la generación, 
+                                        transmisión, distribución y utilización de la energía eléctrica.
+                                    </p>
+                                    <p> Descargar Pensum UNEXPO</p>  
+                                    <button type="button" class="btn btn-secondary" onclick="window.location.href = 'https://virtualunexpo.com/wp-content/uploads/Barquisimeto-ingenieria-electrica.pdf'">
+                                        Pensum
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 mb-30">
+                            <div class="card text-white bg-success card-box">
+                                <div class="card-header">Ingeniería</div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-white">Química </h5>
+                                    <p class="card-text">
+                                        es una rama de la ingeniería que aplica los principios de la química, física y matemáticas para transformar la materia. Los ingenieros químicos diseñan, 
+                                        construyen y operan procesos industriales que convierten materias primas en productos útiles.
+                                    </p>
+                                    <p> Descargar Pensum UNEXPO</p>  
+                                    <button type="button" class="btn btn-secondary" onclick="window.location.href = 'https://virtualunexpo.com/wp-content/uploads/Barquisimeto-ingenieria-quimica.pdf'">
+                                        Pensum 
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 mb-30">
+                            <div class="card text-black bg-warning card-box">
+                                <div class="card-header">Ingeniería</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Industrial</h5>
+                                    <p class="card-text">
+                                        Es una rama de la ingeniería que se enfoca en la optimización de sistemas y procesos dentro de 
+                                        una organización. Los ingenieros industriales buscan mejorar la eficiencia, productividad y calidad
+                                         de los productos o servicios, utilizando herramientas conocimientos de diversas áreas como matemáticas, 
+                                         física, estadística y ciencias sociales.
+                                    </p>
+                                    <p> Descargar Pensum UNEXPO</p>  
+                                    <button type="button" class="btn btn-secondary" onclick="window.location.href = 'https://virtualunexpo.com/wp-content/uploads/Barquisimeto-ingenieria-industrial.pdf'">
+                                        Pensum
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 mb-30">
+                            <div class="card text-white bg-info card-box">
+                                <div class="card-header">Ingeniería</div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-white">Metalúrgica</h5>
+                                    <p class="card-text">
+                                        Es la rama de la ingeniería que se encarga del estudio, diseño y desarrollo de procesos para extraer, refinar, transformar y aplicar los metales. Los ingenieros metalúrgicos
+                                         trabajan con una amplia variedad de metales, desde el hierro y el aluminio hasta metales preciosos como el oro y la plata.
+                                    </p>
+                                    <p> Descargar Pensum UNEXPO</p>  
+                                    <button type="button" class="btn btn-secondary" onclick="window.location.href = 'https://virtualunexpo.com/wp-content/uploads/Barquisimeto-ingenieria-metalurgica.pdf'">
+                                        Pensum
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 mb-30">
+                            <div class="card text-white bg-dark card-box">
+                                <div class="card-header">Ingeniería</div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-white">Mecánica</h5>
+                                    <p class="card-text">
+                                        Es una rama de la ingeniería que se encarga del diseño, análisis, fabricación y mantenimiento de sistemas mecánicos. Esto incluye desde pequeñas piezas hasta grandes estructuras, 
+                                         desde herramientas simples hasta complejos sistemas robóticos.
+                                    </p>
+                                    <p> Descargar Pensum UNEXPO</p>  
+                                    <button type="button" class="btn btn-secondary" onclick="window.location.href = 'https://virtualunexpo.com/wp-content/uploads/Barquisimeto-ingenieria-mecanica.pdf'">
+                                        Pensum
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-wrap pd-20 mb-20 card-box">
+                        UNEXPlora ©2024 By
+                        <a href="https://www.instagram.com/jaypurple13/" target="_blank">Jaymar Dominguez </a
+					>
+				</div>
+                  
+            <!-- js -->
+            <script src="vendors/scripts/core.js"></script>
+            <script src="vendors/scripts/script.min.js"></script>
+            <script src="vendors/scripts/process.js"></script>
+            <script src="vendors/scripts/layout-settings.js"></script>
+            <script src="src/plugins/apexcharts/apexcharts.min.js"></script>
+            <script src="src/plugins/datatables/js/jquery.datatables.min.js"></script>
+            <script src="src/plugins/datatables/js/datatables.bootstrap4.min.js"></script>
+            <script src="src/plugins/datatables/js/datatables.responsive.min.js"></script>
+            <script src="src/plugins/datatables/js/responsive.bootstrap4.min.js"></script>
+            <script src="vendors/scripts/dashboard.js"></script>
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe
+				src="https://www.googletagmanager.com/ns.html?id=GTM-NXZMQSS"
+				height="0"
+				width="0"
+				style="display: none; visibility: hidden"
+			></iframe
+		></noscript>
+            <!-- End Google Tag Manager (noscript) -->
+</body>
+
+</html>

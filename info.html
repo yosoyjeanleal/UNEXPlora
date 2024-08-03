@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Basic Page Info -->
+    <meta charset="utf-8" />
+    <title>UNEXPlora</title>
+
+    <!-- Site favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="vendors/images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="vendors/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="vendors/images/favicon-16x16.png" />
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="vendors/styles/core.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/styles/icon-font.min.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/styles/style.css" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GBZ3SGGX85"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2973766580778258" crossorigin="anonymous"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-GBZ3SGGX85");
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                "gtm.start": new Date().getTime(),
+                event: "gtm.js"
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != "dataLayer" ? "&l=" + l : "";
+            j.async = true;
+            j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, "script", "dataLayer", "GTM-NXZMQSS");
+    </script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>    
+
+    <div class="header">
+        <div class="header-left">
+            <div class="menu-icon bi bi-list"></div>
+            <div class="search-toggle-icon bi bi-search" data-toggle="header_search"></div>
+
+
+        </div>
+        <div class="header-right">
+            <div class="dashboard-setting user-notification">
+                <div class="dropdown">
+                    <a class="dropdown-toggle no-arrow" href="javascript:;" data-toggle="right-sidebar">
+                        <i class="dw dw-settings2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="dashboard-setting user-notification">
+                <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                    <i class="icon-copy bi bi-info-circle"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
+                    <a class="dropdown-item" href="info.html">
+                        <i class="dw dw-help"></i> Desarrolladores</a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <div class="right-sidebar">
+        <div class="sidebar-title">
+            <h3 class="weight-600 font-16 text-blue">
+                Opciones de Diseño
+                <span class="btn-block font-weight-400 font-12">Configuración de la Interfaz de Usuario
+                            </span
+					>
+				</h3>
+				<div class="close-sidebar" data-toggle="right-sidebar-close">
+					<i class="icon-copy ion-close-round"></i>
+				</div>
+			</div>
+			<div class="right-sidebar-body customscroll">
+				<div class="right-sidebar-body-content">
+					<h4 class="weight-600 font-18 pb-10">Fondo de Cabecera</h4>
+					<div class="sidebar-btn-group pb-30 mb-10">
+						<a
+							href="javascript:void(0);"
+							class="btn btn-outline-primary header-white active"
+							>Claro</a
+						>
+						<a
+							href="javascript:void(0);"
+							class="btn btn-outline-primary header-dark"
+							>Oscuro</a
+						>
+					</div>
+
+					<h4 class="weight-600 font-18 pb-10">Fondo de la Barra Lateral</h4>
+					<div class="sidebar-btn-group pb-30 mb-10">
+						<a
+							href="javascript:void(0);"
+							class="btn btn-outline-primary sidebar-light"
+							>Claro</a
+						>
+						<a
+							href="javascript:void(0);"
+							class="btn btn-outline-primary sidebar-dark active"
+							>Oscuro</a
+						>
+					</div>					
+                            <div class="reset-options pt-30 text-center">
+                                <button class="btn btn-danger" id="reset-settings">
+							Restaurar configuraciones
+						</button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="header">
+                <div class="header-left">
+                    <div class="menu-icon bi bi-list"></div>
+                    <div class="search-toggle-icon bi bi-search" data-toggle="header_search"></div>
+        
+        
+                </div>
+                <div class="header-right">
+                    <div class="dashboard-setting user-notification">
+                        <div class="dropdown">
+                            <a class="dropdown-toggle no-arrow" href="javascript:;" data-toggle="right-sidebar">
+                                <i class="dw dw-settings2"></i>
+                            </a>
+                        </div>
+                    </div>
+        
+                    <div class="dashboard-setting user-notification">
+                        <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                            <i class="icon-copy bi bi-info-circle"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
+                            <a class="dropdown-item" href="info.html">
+                                <i class="dw dw-help"></i> Desarrolladores</a>
+                        </div>
+        
+                    </div>
+                </div>
+        
+            </div>
+            </div>
+        
+            <div class="right-sidebar">
+                <div class="sidebar-title">
+                    <h3 class="weight-600 font-16 text-blue">
+                        Opciones de Diseño
+                        <span class="btn-block font-weight-400 font-12">Configuración de la Interfaz de Usuario
+                                    </span
+                            >
+                        </h3>
+                        <div class="close-sidebar" data-toggle="right-sidebar-close">
+                            <i class="icon-copy ion-close-round"></i>
+                        </div>
+                    </div>
+                    <div class="right-sidebar-body customscroll">
+                        <div class="right-sidebar-body-content">
+                            <h4 class="weight-600 font-18 pb-10">Fondo de Cabecera</h4>
+                            <div class="sidebar-btn-group pb-30 mb-10">
+                                <a
+                                    href="javascript:void(0);"
+                                    class="btn btn-outline-primary header-white active"
+                                    >Claro</a
+                                >
+                                <a
+                                    href="javascript:void(0);"
+                                    class="btn btn-outline-primary header-dark"
+                                    >Oscuro</a
+                                >
+                            </div>
+        
+                            <h4 class="weight-600 font-18 pb-10">Fondo de la Barra Lateral</h4>
+                            <div class="sidebar-btn-group pb-30 mb-10">
+                                <a
+                                    href="javascript:void(0);"
+                                    class="btn btn-outline-primary sidebar-light"
+                                    >Claro</a
+                                >
+                                <a
+                                    href="javascript:void(0);"
+                                    class="btn btn-outline-primary sidebar-dark active"
+                                    >Oscuro</a
+                                >
+                            </div>					
+                                    <div class="reset-options pt-30 text-center">
+                                        <button class="btn btn-danger" id="reset-settings">
+                                    Restaurar configuraciones
+                                </button>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+        
+                    <div class="left-side-bar">
+                        <div class="brand-logo">
+                            <a href="index.html">
+                                <img src="vendors/images/deskapp-logo.svg" alt="" class="dark-logo" />
+                                <img src="vendors/images/deskapp-logo-white.svg" alt="" class="light-logo" />
+                            </a>
+                            <div class="close-sidebar" data-toggle="left-sidebar-close">
+                                <i class="ion-close-round"></i>
+                            </div>
+                        </div>
+                        <div class="menu-block customscroll">
+                            <div class="sidebar-menu">
+                                <ul id="accordion-menu">
+                                    <li class="dropdown">
+                                        <a href="javascript:;" class="dropdown-toggle">
+                                            <span class="micon bi bi-house"></span
+                                        ><span class="mtext">Inicio</span>
+                                        </a>
+                                        <ul class="submenu">
+                                            <li><a href="index.html">Información</a></li>
+                                            <li><a href="index2.html">Profesores</a></li>                                    
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="javascript:;" class="dropdown-toggle">
+                                            <span class="micon bi bi-command"></span
+                                                    ><span class="mtext">Vida Universitaria</span>
+                                        </a>
+                                        <ul class="submenu">
+                                            <li><a href="grupos.html">Grupos & Clubes</a></li>
+                                            <li><a href="Marketplace.html">Marketplace</a></li>                                    
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="javascript:;" class="dropdown-toggle">
+                                            <span class="micon bi bi-textarea-resize"></span
+                                                    ><span class="mtext">Galeria</span>
+                                        </a>
+                                        <ul class="submenu">
+                                            <li><a href="gallery.html"> Universidad</a></li>
+                                            <li><a href="gallery2.html">Eventos</a></li>
+                                        </ul>
+                                    </li>                                
+                                    <li>
+                                        <a href="info.html" class="dropdown-toggle no-arrow">
+                                            <span class="micon bi bi-receipt-cutoff"></span
+                                                    ><span class="mtext">Desarrolladores</span>
+                                        </a>
+                                    </li>                                               
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-menu-overlay"></div>
+
+            <div class="main-container">
+                <div class="pd-ltr-20 xs-pd-20-10">
+                    <div class="min-height-200px">
+                        <div class="page-header">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="title">
+                                        <h4>Desarrolladores</h4>
+                                    </div>
+                                    <nav aria-label="breadcrumb" role="navigation">
+                                        <ol class="breadcrumb">                                            
+                                            <li class="breadcrumb-item active" aria-current="page">
+                                                Desarrolladores
+                                            </li>
+                                        </ol>
+                                    </nav>
+                                </div>
+                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="invoice-wrap">
+                            <div class="invoice-box">
+                                <div class="invoice-header">
+                                    <div class="logo text-center">
+                                        <img src="vendors/images/deskapp-logo.png" alt="" />
+                                    </div>
+                                </div>
+                                <h4 class="text-center mb-30 weight-600">UNEXPlora</h4>                              
+                                <div class="invoice-desc pb-30">
+                                    <div class="invoice-desc-head clearfix">
+                                        <div class="invoice-sub">INTEGRANTES</div>
+                                        <div class="invoice-rate">ENCARGADO</div>                                        
+                                        <div class="invoice-subtotal">SECCIÓN</div>
+                                    </div>
+                                    <div class="invoice-desc-body">
+                                        <ul>
+                                            <li class="clearfix">
+                                                <div class="invoice-sub">JAYMAR DOMINGUEZ</div>
+                                                <div class="invoice-rate">PROGRAMACIÓN</div>                                               
+                                                <div class="invoice-subtotal">
+                                                    <span class="weight-600">05</span>
+                                                </div>
+                                            </li>
+                                            <li class="clearfix">
+                                                <div class="invoice-sub">RAMON LOYO</div>
+                                                <div class="invoice-rate">DISEÑO</div>                                               
+                                                <div class="invoice-subtotal">
+                                                    <span class="weight-600">05</span>
+                                                </div>
+                                            </li>
+                                            <li class="clearfix">
+                                                <div class="invoice-sub">ANDREA RODRÍGUEZ</div>
+                                                <div class="invoice-rate">DISEÑO</div>                                              
+                                                <div class="invoice-subtotal">
+                                                    <span class="weight-600">05</span>
+                                                </div>
+                                            </li>
+                                            <li class="clearfix">
+                                                <div class="invoice-sub">DANIEL ARAUJO</div>
+                                                <div class="invoice-rate">RECOLECCIÓN DE INFROMACIÓN</div>                                               
+                                                <div class="invoice-subtotal">
+                                                    <span class="weight-600">05</span>
+                                                </div>
+                                            </li>
+                                            <li class="clearfix">
+                                                <div class="invoice-sub">JHOAN BARRETO</div>
+                                                <div class="invoice-rate">RECOLECCIÓN DE INFROMACIÓN</div>                                               
+                                                <div class="invoice-subtotal">
+                                                    <span class="weight-600">05</span>
+                                                </div>
+                                            </li>
+                                                                                    
+                                                                     
+                                        <div class="invoice-desc pb-30">
+                                            <div class="invoice-desc-head clearfix">
+                                                <div class="invoice-sub">PROFESORA</div>
+                                                <div class="invoice-rate">MATRERIA</div>                                        
+                                                
+                                            </div>
+                                            <div class="invoice-desc-body">
+                                                <ul>
+                                                    <li class="clearfix">
+                                                        <div class="invoice-sub">MARIANGEL ALVAREZ </div>
+                                                        <div class="invoice-rate">D.H.P</div>
+                                                        
+                                                    </li>
+                                                    <div class="invoice-desc pb-30">
+                                                        <div class="invoice-desc-head clearfix">
+                                                            <div class="invoice-sub">Agradecimiento a</div>
+                                                            <div class="invoice-rate">Apoyo</div>                                        
+                                                            
+                                                        </div>
+                                                        <div class="invoice-desc-body">
+                                                            <ul>
+                                                                <li class="clearfix">
+                                                                    <div class="invoice-sub">JEAN LEAL</div>
+                                                                    <div class="invoice-rate">PROGRAMACIÓN</div>
+                                                                </li>
+                                                                <li class="clearfix">
+                                                                    <div class="invoice-sub">GABRIEL VILLAVICENCIO</div>
+                                                                    <div class="invoice-rate">INFORMACIÓN</div>
+                                                                    
+                                                                    </div>
+                                                                </li>
+                                                                    
+                                                                    </div>
+                                                                
+                                        </ul>
+                                        
+                                    </div>                                    
+							
+						</div>
+					</div>
+				</div>
+				<div class="footer-wrap pd-20 mb-20 card-box">
+					UNEXPlora ©2024 By
+					<a href="https://www.instagram.com/jaypurple13/" target="_blank"
+						>Jaymar Dominguez </a
+					>
+                    
+				</div>
+			</div>
+		</div>
+		
+                                        <!-- js -->
+                                        <script src="vendors/scripts/core.js"></script>
+                                        <script src="vendors/scripts/script.min.js"></script>
+                                        <script src="vendors/scripts/process.js"></script>
+                                        <script src="vendors/scripts/layout-settings.js"></script>
+                                        <!-- Google Tag Manager (noscript) -->
+                                        <noscript><iframe
+				src="https://www.googletagmanager.com/ns.html?id=GTM-NXZMQSS"
+				height="0"
+				width="0"
+				style="display: none; visibility: hidden"
+			></iframe
+		></noscript>
+                                        <!-- End Google Tag Manager (noscript) -->
+</body>
+
+</html>
